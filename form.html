@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <style>
+      input,
+      textarea {
+        border: 2px solid black;
+        color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Form</h2>
+      <!-- get or post -->
+      <form method="get" action="" target="_self">
+        <!-- contact information -->
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          placeholder="Please enter name"
+          name="fname"
+          disabled
+        />
+        <br />
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          placeholder="Please enter name"
+          name="lname"
+          readonly
+        />
+        <br />
+        <label for="age">Enter Age</label>
+        <input
+          type="number"
+          placeholder="Please enter age"
+          name="age"
+          autofocus
+          required
+        />
+        <br />
+        <label for="number">Number</label>
+        <input
+          type="tel"
+          placeholder="Please eneter contact Number"
+          name="number"
+          maxlength="10"
+        />
+        <br />
+        <!-- radio input -->
+        <input type="radio" name="gender" value="male" />
+        <label for="male">Male</label>
+        <br />
+        <input type="radio" name="gender" value="female" />
+        <label for="female">Female</label>
+        <br />
+        <!-- selecting colors-->
+        <label for="color">Select your favorite color</label>
+        <input type="color" name="color" />
+        <br />
+        <!-- date & time -->
+        <label for="birthday">Select Birth Day</label>
+        <input type="date" name="birthday" />
+        <br />
+        <label for="time">Select Time</label>
+        <input type="time" name="time" />
+        <br />
+        <!-- select file -->
+        <label for="files">Select File</label>
+        <input type="file" name="files" />
+        <br />
+        <label for="files">Select File</label>
+        <input type="file" name="files" multiple />
+        <br />
+        <input type="checkbox" name="term" />
+        <label for="term">I agree to T&C</label>
+        <br />
+        <!-- dropdown -->
+        <label for="country"> Select Country</label>
+        <select name="country">
+          <option value="india">India</option>
+          <option value="canada">Canada</option>
+          <option value="australia">Australia</option>
+        </select>
+        <br />
+        <textarea name="feedback" cols="20" rows="6">
+        Please enter feedback</textarea
+        >
+
+        <button>Submit</button>
+        <input type="reset" />
+      </form>
+    </div>
+  </body>
+</html>

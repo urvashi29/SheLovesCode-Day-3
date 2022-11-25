@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      input {
+        border: 2px solid teal;
+        font-size: 20px;
+      }
+      label {
+        color: palevioletred;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      span {
+        color: red;
+      }
+      button {
+        color: palevioletred;
+        background-color: teal;
+        font-size: 25px;
+        font-weight: bold;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="get" target="_blank">
+      <p>
+        <label for="fname"><span>*</span>Name:</label>
+        <input
+          type="text"
+          placeholder="Please enter name"
+          name="fname"
+          required
+        />
+      </p>
+
+      <p>
+        <label for="age">Age:</label>
+        <input type="number" placeholder="Please enter age" name="age" />
+      </p>
+      <p>
+        <label for="email"><span>*</span>Email:</label>
+        <input
+          type="email"
+          placeholder="Please enter email"
+          name="email"
+          required
+        />
+      </p>
+      <p>
+        <label for="pwd"><span>*</span>Password:</label>
+        <input
+          type="password"
+          placeholder="Please enter password"
+          name="pwd"
+          required
+        />
+      </p>
+
+      <button>Login</button>
+    </form>
+  </body>
+</html>

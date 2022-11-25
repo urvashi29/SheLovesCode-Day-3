@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tables</title>
+
+    <!-- internal css -->
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid pink;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header></header>
+
+    <main>
+      <section>
+        <!-- tr -> table row -->
+        <!-- td-> table cell -->
+
+        <!-- to center a table -->
+        <table style="margin-left: auto; margin-right: auto">
+          <caption style="color: orange">
+            Technology Table
+          </caption>
+          <tr>
+            <th>S.no</th>
+            <th>Technology Name</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>HTML</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>CSS</td>
+          </tr>
+        </table>
+        <!-- colspan -> cell that span the column
+          rowspan -> cell that span the row -->
+
+        <table>
+          <caption>
+            Data
+          </caption>
+          <tr>
+            <th>Person name</th>
+            <th>Contact Number</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td colspan="2">Alina</td>
+            <td>999999</td>
+          </tr>
+          <tr>
+            <td>Harry</td>
+            <td colspan="2">999999</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Harry</td>
+            <td>999999</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>99999</td>
+            <td>9</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
+<!-- 
+global attributes -> id, class, style, title
+element specific attributes -->
+
+<!-- 
+  nesting of table: emailers -->
+
+<!-- task
+  create a header(contain navigation links(home, contact, about, login(button), logo): link all the navigation item to respective webpages.
+  create a login form (email, pwd, necessary information and style it)
+  create a footer having social media links, contact information
+   -->
